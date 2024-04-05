@@ -26,7 +26,26 @@ const colors =tokens(theme.palette.mode)
 const[isCollapsed,setIsCollapsed]= useState(false);
 const[selected,SetSelected] =useState('DashBoard');
   return (
-    <div>Sidebar</div>
+    <Box>
+      sx-{{
+        "& .pro-sidebar-inner":{
+          background: `${colors.primary[400]} !important`
+        },
+        "&.pro-icon-wrapper":{
+          backgroundcolor:"transparent !important"
+        },
+        "& .pro-inner-item" :{
+          padding:"5px 35px 5px 20px !important"
+        },
+        "& .pro-inner-item:hover" :{
+          color:"#868dfb !important"
+        },
+        "& .pro-menu-item" :{
+          color :"#6870fa !important"
+        },
+        
+      }}
+    </Box>
   )
 }
 
